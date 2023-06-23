@@ -8,19 +8,16 @@
         
         <!-- <nav> -->
             <b-navbar toggleable="md" type="blue" variant="blue">
-            <b-navbar-brand href="#">Menu</b-navbar-brand>
+       
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
-                <b-nav-item href="#">Link 1</b-nav-item>
-                <b-nav-item href="#">Link 2</b-nav-item>
-                <b-nav-item href="#">Link 3</b-nav-item>
+                <b-nav-item href="/posts"><h3 class="menu-link">Post</h3></b-nav-item>
+                <b-nav-item href="/users"><h3 class="menu-link">Users</h3></b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
             </b-navbar>
-        
-            <router-link to="/">Home</router-link>
-            <router-link to="/about">About</router-link>
+
             <router-view></router-view>
     
         <!-- </nav> -->
@@ -31,11 +28,15 @@
 
 <style>
 header {
-    padding:15px;
+    padding-top:15px;
+    padding-bottom:0;
     background:#009BDE;
 
 }
-header h1 {
-    color:#FFF;
+header h1, .menu-link {
+    color:#FFF !important;
+}
+nav {
+    padding:0 !important;
 }
 </style>
