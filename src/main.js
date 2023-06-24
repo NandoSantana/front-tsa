@@ -17,6 +17,7 @@ Vue.use(VueRouter);
 
 
 import PostsComponent from './Pages/PostsComponents.vue';
+import Users from './Pages/Users.vue';
 
 const routes = [
   {
@@ -24,11 +25,11 @@ const routes = [
     name: 'PostsComponent',
     component: PostsComponent
   },
-  // {
-  //   path: '/users',
-  //   name: 'Users',
-  //   component: Posts
-  // }
+  {
+    path: '/users',
+    name: 'Users',
+    component: Users
+  }
 ];
 
 Vue.config.productionTip = false
