@@ -2,8 +2,6 @@
   <div id="app">
     
     <NavBar/>
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-
   
   </div>
 
@@ -15,9 +13,7 @@ import NavBar from './components/NavBar.vue';
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
     NavBar
-
   }
 }
 </script>
@@ -30,7 +26,7 @@ body {
 nav {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #009BDE;
+  background-color: #0379AB;
   padding: 10px;
 }
 
