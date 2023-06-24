@@ -23,13 +23,13 @@ export default {
 </script>
 
 <style>
-
+body {
+  font-family: Roboto
+}
 
 nav {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   background-color: #009BDE;
   padding: 10px;
 }
