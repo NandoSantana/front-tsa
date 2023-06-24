@@ -1,5 +1,4 @@
 <template>
-
   <div class="container">
     <br/>
     <select v-model="selectedOption" @change="changeList" class="custom-select">
@@ -26,7 +25,6 @@
         </form>
       </div>
     </div>
-    
   </div>
 </template>
 
@@ -62,15 +60,8 @@ export default {
   methods: {
     editList(body,nome, id){
       this.idPost = id;
-      this.index = id-1;
-      console.log(this.idPost);
       this.title = nome;
       this.postBody = body;
-      // if (this.title == '' && this.postBody == '')
-      //   this.idPost = this.users.length+1
-
-      // this.title = title
-      // this.titleBody = postBody
     },
     deleteItemFromList(itemId){
        this.list = this.list.filter(item => item.id !== itemId);
@@ -89,13 +80,16 @@ export default {
     },
     savePost() {
       if(this.idPost != null){
+        // Lugar do request de edição retornando as linhas abaixo 
+        // deste bloco do if
         this.list[this.idPost-1].name = this.title;
         this.list[this.idPost-1].body = this.postBody;
 
       }else {
+        // Lugar do request de adição retornando as linhas abaixo 
+        // deste bloco do else
         this.list.push({name: this.title, body: this.postBody, id: this.selectedOption, postId: this.list.length+1 });
       }
-      // Resetar os campos após salvar, se necessário
     
     }
 
